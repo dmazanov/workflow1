@@ -1,0 +1,100 @@
+.vk, .vk-h, .tw, .tw-h, .fb, .fb-h, .git, .git-h, .case, .study, .file, .lock, .lock-open, .letter-ico, .skype-ico, .tel-ico{
+	background: url(sprites.png) no-repeat;
+}
+
+.vk{
+	background-position: 0 0;
+	width: 47px;
+	height: 47px;
+}
+
+.vk-h{
+	background-position: -52px 0;
+	width: 47px;
+	height: 47px;
+}
+
+.tw{
+	background-position: 0 -55px ;
+	width: 47px;
+	height: 47px;
+}
+
+.tw-h{
+	background-position: -52px -55px ;
+	width: 47px;
+	height: 47px;
+}
+
+.fb{
+	background-position: 0 -110px ;
+	width: 47px;
+	height: 47px;
+}
+
+.fb-h{
+	background-position: -52px -110px ;
+	width: 47px;
+	height: 47px;
+}
+
+.git{
+	background-position: 0 -164px ;
+	width: 47px;
+	height: 47px;
+}
+
+.git-h{
+	background-position: -52px -164px ;
+	width: 47px;
+	height: 47px;
+}
+
+.case{
+	background-position: 0 -225px ;
+	width: 36px;
+	height: 34px;
+}
+
+.study{
+	background-position: 0 -270px ;
+	width: 41px;
+	height: 23px;
+}
+
+.file{
+	background-position: 0 -304px ;
+	width: 26px;
+	height: 32px;
+}
+
+.lock{
+	background-position: 0 -350px ;
+	width: 20px;
+	height: 32px;
+}
+
+.lock-open{
+	background-position: -30px -350px ;
+	width: 20px;
+	height: 32px;
+}
+
+.letter-ico{
+	background-position: 0 -390px ;
+	width: 21px;
+	height: 16px;
+}
+
+.skype-ico{
+	background-position: 0 -450px ;
+	width: 21px;
+	height: 20px;
+}
+
+.tel-ico{
+	background-position: 0 -420px ;
+	width: 20px;
+	height: 20px;
+}
+
