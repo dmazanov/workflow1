@@ -20,6 +20,7 @@ html, body, .content-wrap { height: 100%;}
 	position: relative;
 	margin-top: -77px;
 	height: 77px;
+	min-width: 970px;
 	clear: both;
 	background-color: #eff3f7;
 }
@@ -44,6 +45,7 @@ background: linear-gradient(90deg, rgba(28, 102, 122, 0.95) 0%, rgba(246, 250, 2
 	background: #eff3f7;
 	padding: 39px 0 34px;
 	position: relative;
+	min-width: 970px;
 }
 .header:after {
 	content: '';
@@ -60,14 +62,13 @@ background: -ms-linear-gradient(0deg, rgba(28, 102, 122, 0.95) 0%, rgba(246, 250
 background: linear-gradient(90deg, rgba(28, 102, 122, 0.95) 0%, rgba(246, 250, 254, 0.95) 0%, rgba(216, 216, 216, 0.95) 0%, rgba(242, 246, 250, 0.95) 0%, rgba(182, 206, 214, 0.95) 28%, rgba(28, 102, 122, 0.95) 48%, rgba(180, 204, 213, 0.95) 71%, rgba(242, 246, 250, 0.95) 100%);
 
 }
-.wrapper {
-	margin: 0 auto;
-}
-.wrap-1200 {
+.header-container {
 	max-width: 1200px;
+  	margin: 0px auto;
 }
-.wrap-960 {
+.main-container, .footer-container {
 	width: 960px;
+	margin: 0px auto;
 }
 .header-logo {
 	float: left;
