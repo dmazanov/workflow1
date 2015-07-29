@@ -11,17 +11,25 @@ body {
 	background: url(/img/comppattern2.png) repeat;
 }
 html, body, .content-wrap { height: 100%;}
-.content-wrap {
-	height: auto;
+
+/* Прибиваем футер к низу */
+.wrapper{
+	position: relative;
 	min-height: 100%;
+	min-width: 970px;
+	height: auto!important;
 }
-.main {	padding-bottom: 77px;}
+.wrapper:after {
+	content: "";
+	height: 80px;
+	display: block;
+}
+
 .footer {
 	position: relative;
-	margin-top: -77px;
-	height: 77px;
 	min-width: 970px;
-	clear: both;
+	height: 80px;
+	margin-top: -80px;
 	background-color: #eff3f7;
 }
 .footer:before {
@@ -46,6 +54,7 @@ background: linear-gradient(90deg, rgba(28, 102, 122, 0.95) 0%, rgba(246, 250, 2
 	padding: 39px 0 34px;
 	position: relative;
 	min-width: 970px;
+	margin-bottom: 40px;
 }
 .header:after {
 	content: '';
@@ -75,13 +84,26 @@ background: linear-gradient(90deg, rgba(28, 102, 122, 0.95) 0%, rgba(246, 250, 2
 }
 .social {
 	float: right;
+	margin: 0;
+	padding: 0;
+	min-width: 260px;
 	margin-top: -4px;
 }
-.soc {
+.soc-item:first-child {
+	margin-left: 0px;
+	margin-right: -1px;
+}
+.soc-item {
+	list-style: none;
 	display: inline-block;
 	height: 47px;
  	width: 47px;
  	margin-left: 20px;
+ }
+ .soc-link {
+ 	display: block;
+ 	height: 100%;
+ 	width: 100%;
  	background: url(/img/sprites.png) no-repeat;
  	text-indent: -9999px;
  }
@@ -202,6 +224,7 @@ background: linear-gradient(90deg, rgba(28, 102, 122, 0.95) 0%, rgba(246, 250, 2
   	position: relative;
   }
   .contacts-link {
+  	display: block;
   	margin-left: 84px;
   }
   .contacts-item:first-child {
@@ -217,7 +240,7 @@ background: linear-gradient(90deg, rgba(28, 102, 122, 0.95) 0%, rgba(246, 250, 2
 	background-position: 0 -390px ;
 	width: 21px;
 	height: 16px;
-	top: 50%;
+	top: 45%;
 	left: 21%;
 	transform: translate(-50%, -50%);
   }
@@ -251,7 +274,7 @@ background: linear-gradient(90deg, rgba(28, 102, 122, 0.95) 0%, rgba(246, 250, 2
 .section {
 	background-color: #eff3f7;
 	border-radius: 4px;
-	margin-bottom: 26px;
+	margin-bottom: 28px;
 }
 .section:last-child {
 	margin-bottom: 40px;
@@ -259,7 +282,7 @@ background: linear-gradient(90deg, rgba(28, 102, 122, 0.95) 0%, rgba(246, 250, 2
 .box-title {
 	display: inline-block;
 	margin: 0 0 17px 0;
-	padding: 13px 23px;
+	padding: 12px 22px;
 	font-family: 'fira_sansbook';
 	font-size: 1.6875em;
 	color: #3ba8c0;
@@ -318,8 +341,7 @@ background: linear-gradient(90deg, rgba(28, 102, 122, 0.95) 0%, rgba(246, 250, 2
 	width: 224px;
 	list-style: none;
 	padding: 0;
-	margin: 0;
-	margin-left: 4px;
+	margin: 2px 0 0 4px;
 }
 .skills-list .skill-item {
 	display: inline-block;
