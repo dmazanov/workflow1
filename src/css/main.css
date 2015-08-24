@@ -418,8 +418,19 @@ background: linear-gradient(0deg, #2e8ca2 0%, #2e8ca2 47%, #3ba8c0 48%, #3ba8c0 
 	position: absolute;
 	top: 33%;
 }
+.lock .lock-inner {
+	display: block;
+	height: 40px;
+	font-family: 'fira_sansbook';
+  font-size: 16px;
+  line-height: 2.2;
+	color: #4a545d;
+	text-decoration: none;
+	padding-left: 24px;
+}
 .lock:hover {
 	background-position: -30px -350px ;
+	text-decoration: underline;
 }
 .copyright {
 	font-size: 0.8125em;

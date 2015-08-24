@@ -16,10 +16,11 @@
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/my-work.css"></head>
-	<link rel="stylesheet" href="css/contact-me.css"></head>
+	<link rel="stylesheet" href="css/my-work.css">
+	<link rel="stylesheet" href="css/contact-me.css">
 	<!-- JS -->
 	<script src="bower/modernizr/modernizr.js"></script>
+</head>
 <body>
 	<!--[if lt IE 8]>
 	<p class="browsehappy">
@@ -98,12 +99,10 @@
 									<div class="form-line clearfix">
 										<div class="form-group pull-left">
 											<label for="name" class="label">Имя</label>
-											<input type="text" class="input" name="name" placeholder="Как к вам обращаться" qtip-content="Вы не ввели имя">
-										</div>
+											<input type="text" class="input" name="name" placeholder="Как к вам обращаться" qtip-content="Вы не ввели имя"></div>
 										<div class="form-group pull-right">
 											<label for="email" class="label">Email</label>
-											<input type="text" class="input" name="email" placeholder="Куда мне писать" qtip-position="right" qtip-content="Вы не ввели email">
-										</div>
+											<input type="text" class="input" name="email" placeholder="Куда мне писать" qtip-position="right" qtip-content="Вы не ввели email"></div>
 									</div>
 									<div class="form-group">
 										<label for="message" class="label">Сообщение</label>
@@ -113,8 +112,7 @@
 										<label for="captcha" class="label">Введите код, указанный на картинке</label>
 										<div class="captcha-wrap-img  pull-left">
 											<img src="img/captcha.jpg" height="46" width="146" alt="code" class="captcha"></div>
-										<input type="text" name="captcha" class="input input-captcha pull-right" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код">
-									</div>
+										<input type="text" name="captcha" class="input input-captcha pull-right" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код"></div>
 									<div class="button-group">
 										<button type="submit" class="btn">Отправить</button>
 										<button type="reset" class="btn btn-res">Очистить</button>
@@ -130,7 +128,9 @@
 
 	<footer class="footer">
 		<div class="footer-container">
-			<div class="lock"><a href="/login.html" class="lock-inner">Войти</a></div>
+			<div class="lock">
+				<a href="/login.html" class="lock-inner">Войти</a>
+			</div>
 			<div class="copyright">
 				© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его
 			</div>

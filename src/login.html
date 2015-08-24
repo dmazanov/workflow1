@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My work</title>
+	<!-- SEO -->
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<!-- favicon.ico -->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<!-- CSS -->
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/my-work.css">
+	<link rel="stylesheet" href="css/contact-me.css">
+	<link rel="stylesheet" href="css/login.css">
+	<!-- JS -->
+	<script src="bower/modernizr/modernizr.js"></script>
+</head>
+<body>
+	<!--[if lt IE 8]>
+	<p class="browsehappy">
+		Ваш браузер <strong>устарел</strong>
+		.
+Пожалуйста
+		<a href="http://browsehappy.com/">обновите</a>
+		его.
+	</p>
+	<![endif]-->
+	<div class="wrapper">
+		<div class="main-content">
+			<div class="login-container">
+				<div class="modal-wrapper login-wrapper">
+					<div class="modal-header">
+						<h2 class="modal-title">Авторизуйтесь</h2>
+					</div>
+					<div class="modal-body">
+						<form action="" id="login" role="form" class="form">
+							<div class="server-mes error-mes"></div>
+               <div class="server-mes success-mes"></div>
+               <div class="form-group">
+               	<label for="login" class="label">Логин</label>
+               	<input type="text" id="name" class="input" name="login" placeholder="Введите логин" qtip-content="Вы не ввели логин">
+               </div>
+               <div class="form-group">
+                  <label for="password" class="label">Пароль</label>
+                  <input id="password" type="password" name="login" placeholder="Введите пароль" qtip-content="Вы не ввели пароль" class="input">
+                </div>
+                <button type="submit" class="btn">Войти</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="footer-container">
+			<div class="lock">
+				<a href="/login.html" class="lock-inner">Войти</a>
+			</div>
+			<div class="copyright">
+				© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его
+			</div>
+		</div>
+	</footer>
+
+	<script src="bower/jquery/jquery.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
