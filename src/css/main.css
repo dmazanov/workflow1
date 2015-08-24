@@ -1,5 +1,6 @@
 body {
 	font-size: 100%;
+	font-family: 'fira_sanslight';
 	background: url(/img/comppattern2.png) repeat;
 }
 html, body, .content-wrap { height: 100%;}
@@ -437,4 +438,10 @@ display: table;
 }
 .clearfix:after {
 clear: both;
+}
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
 }

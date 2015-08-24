@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="bower/normalize.css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/my-work.css"></head>
+	<link rel="stylesheet" href="css/contact-me.css"></head>
 	<!-- JS -->
 	<script src="bower/modernizr/modernizr.js"></script>
 <body>
@@ -61,11 +62,11 @@
 							<li class="nav-item">
 								<a href="/" class="nav-link">Обо мне</a>
 							</li>
-							<li class="nav-item active">
+							<li class="nav-item">
 								<a href="my-work.html" class="nav-link">Мои работы</a>
 							</li>
-							<li class="nav-item">
-								<a href="contact-me.html" class="nav-link">Связаться со мной</a>
+							<li class="nav-item active">
+								<a href="" class="nav-link">Связаться со мной</a>
 							</li>
 						</ul>
 					</nav>
@@ -86,67 +87,40 @@
 				</aside>
 				<div class="content-containers">
 					<section class="section">
-						<h2 class="box-title">Мои работы</h2>
-						<div class="box-body clearfix">
-
-							<ul class="projects-list">
-								<li class="project-item">
-									<div>
-										<div class="project-img-wrap">
-											<img src="img/site.jpg" alt="" class="project-img">
-											<div class="project-hover">
-												<a href="#" class="project-hover-title">site</a>
-											</div>
+						<div class="header-big-wrap">
+							<h2 class="section-header-big">У вас интересный проект? Напишите мне</h2>
+						</div>
+						<div class="box-body">
+							<div class="contact-form-wrap">
+								<form action="" class="form contact-form" id="contact-me">
+									<div class="server-mes error-mes"></div>
+									<div class="server-mes success-mes"></div>
+									<div class="form-line clearfix">
+										<div class="form-group pull-left">
+											<label for="name" class="label">Имя</label>
+											<input type="text" class="input" name="name" placeholder="Как к вам обращаться" qtip-content="Вы не ввели имя">
 										</div>
-										<a href="#" class="project-title">www.site.ru</a>
-										<div class="project-desc">Информация о проекте 1 превью 2 строки....</div>
-									</div>
-								</li>
-								<li class="project-item">
-									<div>
-										<div class="project-img-wrap">
-											<img src="img/site.jpg" alt="" class="project-img">
-											<div class="project-hover">
-												<a href="#" class="project-hover-title">site</a>
-											</div>
+										<div class="form-group pull-right">
+											<label for="email" class="label">Email</label>
+											<input type="text" class="input" name="email" placeholder="Куда мне писать" qtip-position="right" qtip-content="Вы не ввели email">
 										</div>
-										<a href="#" class="project-title">www.site.ru</a>
-										<div class="project-desc">Информация о проекте 1 превью 2 строки....</div>
 									</div>
-								</li>
-								<li class="project-item">
-									<div>
-										<div class="project-img-wrap">
-											<img src="img/site.jpg" alt="" class="project-img">
-											<div class="project-hover">
-												<a href="#" class="project-hover-title">site</a>
-											</div>
-										</div>
-										<a href="#" class="project-title">www.site.ru</a>
-
-										<div class="project-desc">Информация о проекте 1 превью 2 строки....</div>
+									<div class="form-group">
+										<label for="message" class="label">Сообщение</label>
+										<textarea name="message" id="message" class="textarea" rows="3" placeholder="Кратко в чем суть" qtip-content="Что вы от меня хотите?"></textarea>
 									</div>
-								</li>
-								<li class="project-item">
-									<div>
-										<div class="project-img-wrap">
-											<img src="img/site.jpg" alt="" class="project-img">
-											<div class="project-hover">
-												<a href="#" class="project-hover-title">site</a>
-											</div>
-										</div>
-										<a href="#" class="project-title">www.site.ru</a>
-
-										<div class="project-desc">Информация о проекте 1 превью 2 строки....</div>
+									<div class="form-group captcha-wrap clearfix">
+										<label for="captcha" class="label">Введите код, указанный на картинке</label>
+										<div class="captcha-wrap-img  pull-left">
+											<img src="img/captcha.jpg" height="46" width="146" alt="code" class="captcha"></div>
+										<input type="text" name="captcha" class="input input-captcha pull-right" placeholder="Введите код" qtip-position="right" qtip-content="Вы не ввели код">
 									</div>
-								</li>
-								<li class="project-item add-new-item">
-									<a href="#" id="add-new-item" class="add-new-link">
-										<div class="add-new-text">Добавить проект</div>
-									</a>
-								</li>
-							</ul>
-
+									<div class="button-group">
+										<button type="submit" class="btn">Отправить</button>
+										<button type="reset" class="btn btn-res">Очистить</button>
+									</div>
+								</form>
+							</div>
 						</div>
 					</section>
 				</div>
@@ -156,7 +130,7 @@
 
 	<footer class="footer">
 		<div class="footer-container">
-			<div class="lock"></div>
+			<div class="lock"><a href="/login.html" class="lock-inner">Войти</a></div>
 			<div class="copyright">
 				© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его
 			</div>
