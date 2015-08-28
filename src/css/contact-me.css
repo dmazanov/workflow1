@@ -174,7 +174,7 @@ input, textarea, button { outline: none}
   height: 41px;
 	position: absolute;
   right: 0;
-	background: url(../img/upload-icon.png) 10px 7px no-repeat;
+	background: url(/img/upload-icon.png) 10px 7px no-repeat;
 	background-color: #48cbe8;
 	border-radius: 0 4px 4px 0;
 }

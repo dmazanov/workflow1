@@ -91,6 +91,11 @@
 	width: 100%;
 }
 
-.add-new-item .add-new-link:hover {
+/*.add-new-item .add-new-link:hover {
 	text-decoration: 	underline;
+}*/
+
+/* Модальное окно */
+#new-progect-popup {
+	display: none;
 }
