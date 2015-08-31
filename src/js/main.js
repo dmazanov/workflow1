@@ -1,17 +1,18 @@
 var myModule = (function () {
 
-	// Инициализирует наш модуль
+	// Инициализируем наш модуль
 	var init = function () {
 				_setUpListners();
 			};
 
 	// Прослушивает события 
 	var _setUpListners = function () {
-				$('#add-new-item').on('click', _showModal); // открыть модальное окно			
-				$('#add-new-project').on('submit', _addProject); // добавление проекта		
+				$('#add-new-item').on('click', _showModal);
+				$('#add-new-project').on('submit', _addProject);
+				$('#fileupload').on('change', _changefileUpload);
 			};
 
-  // Работает с модальным окном
+	// Работает с модальным окном
 	var _showModal = function (e) {
 				e.preventDefault();
 
@@ -23,9 +24,20 @@ var myModule = (function () {
 	        transition: 'slideDown',
 	        onClose: function () {
 	        	form.find('.server-mes').text('').hide();
+	        	form.trigger('reset');
 	        }
 				});
 			};
+
+// Изменили файл аплоад 
+var _changefileUpload = function (){
+		var input = $(this),
+				name = input[0].files[0].name;
+		$('#filename')
+			.val(name) // 
+			.trigger('hideTooltip')
+			.removeClass('has-error'); 
+	};
 
   // Добавляет проект
 	var _addProject = function (e) {
@@ -34,9 +46,10 @@ var myModule = (function () {
 				// объявляем переменные
 				var form = $(this),
 						url = 'add_project.php',
-						myServerGiveMeAnAnswer = _ajaxForm(form, url);	
-				
-				myServerGiveMeAnAnswer.done(function(ans) {
+						defObj = _ajaxForm(form, url);
+
+				if (defObj) {
+					defObj.done(function(ans) {
 
 					var successBox = form.find('.success-mes'),
 							errorBox = form.find('.error-mes');
@@ -49,18 +62,14 @@ var myModule = (function () {
 						errorBox.text(ans.text).show();
 					}
 					
-				})
+				});
+				}
+				 
 			};
 
-  // Универсальная функция
-  // Для её работы используются
-  // @form - форма
-  // @url - адрес php файла, к которому мы обращаемся
-  // 1. собирает данные из формы
-  // 2. проверяет форму
-  // 3. делает запрос на сервер и возвращает ответ с сервера
 	var _ajaxForm = function (form, url) {
-			// if(!valid) return false;
+			
+			if (!validation.validateForm(form)) return false;
 				
 				data = form.serialize();
 
