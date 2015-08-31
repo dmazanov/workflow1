@@ -10,6 +10,16 @@
 }
 
 @font-face {
+    font-family: 'fira_sansregular';
+    src: url('firasans-regular.eot');
+    src: url('firasans-regular.eot?#iefix') format('embedded-opentype'),
+         url('firasans-regular.woff') format('woff'),
+         url('firasans-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'fira_sanslight';
     src: url('firasans-light.eot');
     src: url('firasans-light.eot?#iefix') format('embedded-opentype'),
